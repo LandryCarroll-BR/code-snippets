@@ -1,5 +1,5 @@
 {
-  "name": "@snippet/tailwind",
+  "name": "@snippets/tailwind",
   "version": "1.0.0",
   "license": "MIT",
   "description": "Tailwind configuration for Snippets",
@@ -26,8 +26,9 @@
   },
   "devDependencies": {
     "@snippets/tsconfig": "workspace:*",
-    "eslint-config-custom": "workspace:*",
-    "autoprefixer": "^10.4.15"
+    "@types/node": "^20.8.2",
+    "autoprefixer": "^10.4.15",
+    "eslint-config-custom": "workspace:*"
   },
   "volta": {
     "extends": "../../../package.json"

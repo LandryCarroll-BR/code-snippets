@@ -1,9 +1,39 @@
-import { type Config } from 'tailwindcss'
+import { type Config } from "tailwindcss";
 
 export const config = {
-  content: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx,mdx}"],
+  darkMode: "class",
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+        mono: ["var(--font-jetbrains-mono)"],
+      },
+      colors: {
+        primary: {
+          50: "#ff93ad",
+          100: "#ff89a3",
+          200: "#ff7f99",
+          300: "#ff758f",
+          400: "#ff6b85",
+          500: "#fa617b",
+          600: "#f05771",
+          700: "#e64d67",
+          800: "#dc435d",
+          900: "#d23953",
+        },
+      },
+    },
   },
-  plugins: [],
-} satisfies Config
+  plugins: [
+    require("tailwindcss-radix-colors"),
+    require("tailwindcss-animate"),
+  ],
+} satisfies Config;
