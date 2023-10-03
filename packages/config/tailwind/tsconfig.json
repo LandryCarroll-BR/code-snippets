@@ -1,0 +1,8 @@
+{
+  "extends": "@snippets/tsconfig/base.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["**/*d.ts"]
+}

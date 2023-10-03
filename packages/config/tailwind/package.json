@@ -1,0 +1,35 @@
+{
+  "name": "@snippet/tailwind",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Tailwind configuration for Snippets",
+  "author": "Landry Carroll",
+  "type": "module",
+  "main": "./dist/tailwind.config.js",
+  "exports": {
+    ".": "./dist/tailwind.config.js",
+    "./postcss.config.cjs": "./postcss.config.cjs"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "pnpm run lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@radix-ui/colors": "^3.0.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-radix-colors": "^0.5.1"
+  },
+  "devDependencies": {
+    "@snippets/tsconfig": "workspace:*",
+    "eslint-config-custom": "workspace:*",
+    "autoprefixer": "^10.4.15"
+  },
+  "volta": {
+    "extends": "../../../package.json"
+  }
+}
