@@ -1,6 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 const config = {
-  extends: ['custom/react-internal'],
+  extends: ['custom/library'],
 }
 
 module.exports = config
