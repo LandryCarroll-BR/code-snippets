@@ -1,5 +1,6 @@
 {
   "name": "@snippets/tsconfig",
+  "author": "Landry Carroll",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
