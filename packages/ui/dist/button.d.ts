@@ -1,11 +1,11 @@
-import * as React from 'react';
+import * as React from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 declare function Button({ children, ...other }: ButtonProps): JSX.Element;
 declare namespace Button {
-    var displayName: string;
+  var displayName: string;
 }
 
 export { Button, ButtonProps };
